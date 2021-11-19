@@ -1,3 +1,10 @@
+* {
+  font-family: poppins;
+  background-color: #162B32;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
 .App {
   text-align: center;
 }
@@ -13,16 +20,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +33,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  color: white;
+  padding: 10px;
+}
+
+.movies img {
+  width: 200px;
+  height: 250px;
+  margin: 15px 0px;
+}
+.movie {
+  padding: 40px;
+}
+.movie button {
+  font-size: 15px;
+  padding: 6px;
+  background-color: #FF4838;
+  border: white;
+  cursor: pointer;
+  box-shadow:0 7px #bd3226;
+  margin: 15px;
+}
+.movie button:active{
+  position: relative;
+  box-shadow: none;
+  top: 7px;
+}
+header {
+  background-color: #FF4838;
+  float:left;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+header button {
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: black;
 }
